@@ -1,0 +1,586 @@
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1920px)
+	.logo_hidden,
+	.toggle_mnu,
+	.hidden-mnu,
+	.tab_hidden
+		display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1140px)
+	nav
+		margin-left: 15px
+	.users_section
+		margin-right: 15px
+	.contact
+		margin-right: 15px
+
+@media only screen and (max-width : 1024px)
+	.download_section__item
+		width: 362px
+
+	.tab 
+		width: 177px
+
+@media only screen and (max-width : 970px)
+	.category__item
+		width: 92px
+	.search_hidden
+		border-top: 10px solid transparent
+	.users_section__searh:hover
+		.search_hidden
+			opacity: 1
+			left: -28px
+			top: 22px
+	.sidebar_section,
+	.sidebar
+		margin-left: 0
+	
+	
+
+@media only screen and (max-width : 960px)
+	
+	
+	.slider_section
+		float: none
+		width: 100%
+	.sidebar_section
+		display: none
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px)
+	.category__item
+		display: none
+	nav
+		display: none
+	.contact .contact__schadule
+		display: none
+	.users_section
+		margin: 13px 25px 8px 0
+	.users_section__login 
+		margin: 0 56px 0 46px
+		
+	.logo_section 
+		padding-top: 51px
+		border-bottom: 1px solid #cccccc
+	//Toggle Mnu 320-750px
+
+
+	.toggle_mnu,
+	.hidden-mnu
+		display: block
+
+	
+
+	.toggle_mnu
+		width: 30px
+		height: 30px
+		border: none
+		float: right
+		z-index: 200
+		left: 15px
+		top: 8px
+		background-color: transparent
+		position: fixed
+		cursor: pointer
+		span
+			display: block
+
+
+	.sandwich 
+		width: 30px
+		height: 30px
+		position: absolute
+		top: 9px
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		z-index: 200
+
+	.sw-topper
+		position: relative
+		top: 0
+		width: 30px 
+		height: 2px
+		background: #333333
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: transform 0.5s, top 0.2s
+		display: block
+
+	.sw-bottom
+		position: relative
+		width: 30px
+		height: 2px
+		top: 4px
+		background: #333333
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: transform 0.5s, top 0.2s
+		transition-delay: 0.2s, 0s
+	.sw-footer
+		position: relative
+		width: 16px
+		height: 2px
+		top: 8px
+		background: #333333
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: all 0.5s
+		transition-delay: 0.1s
+	.sandwich.active
+		.sw-topper
+			top: 7px
+			transform: rotate(-45deg)
+		.sw-bottom
+			top: 5px
+			transform: rotate(45deg)
+		.sw-footer
+			opacity: 0
+			top: 0
+			transform: rotate(180deg)
+
+
+	.hidden-mnu
+		position: fixed
+		display: none
+		top: 52px
+		left: 10px
+		z-index: 200
+		background-color: #f8f9fb
+		.menu 
+			padding: 0
+			li.item_main
+				display: block
+				padding: 7px 0
+				a.link_main
+					padding: 7px 18px
+					color: #454647
+					font-size: 14px 
+					.fa-angle-down
+						color: #454647
+						transition: .3s
+				&:hover
+					background-color: #ee3346
+					a.link_main
+						color: #fff
+						padding: 3px 18px
+						.fa-angle-down
+							color: #fff
+							transform: ScaleY(-1)
+
+	
+			.menu__list
+				position: relative
+			.menu__drop
+				position: absolute
+				width: 100%
+				border-left: 5px solid transparent
+				opacity: 0
+				left: -9999em
+				transition: .5s opacity
+				z-index: 200
+				li 
+					display: block
+					padding: 7px 0
+					background-color: #f9fafc
+					a 
+						padding: 7px 18px
+						color: #454647
+						font-size: 14px 
+						font-family: "OpenSans", sans-serif
+					&:hover
+						background-color: #ee3346
+						a
+							color: #fff
+
+					
+			.menu__list:hover 
+				.menu__drop
+					opacity: 1
+					left: 100%
+					top: -20px
+
+	.download_section__item
+		width: 315px
+		margin: 0 auto
+
+	.products_similar__item
+		width: 240px
+
+
+	.descr__price_current
+		float: none
+
+	.products_similar__descr .descr__price .price_new,
+	.products_similar__descr .descr__price .descr__price_current
+		float: none
+	.products_similar__descr .descr__price .descr__price_old
+		margin-left: 0
+	.products_similar__descr .descr__price
+		margin-bottom: 0
+
+	.logo_section .logo 
+		float: left
+		margin: 21px 0px 23px 19px
+
+	.breadcrumbs
+		display: none
+
+	.product_name h1 
+		margin: 38px 0 18px 13px
+
+	.slider_section
+		float: none
+		width: 100%
+	.price_current
+		margin-left: 21px
+	.slider_left 
+		margin-left: 13px
+	.links_description
+		margin-left: 14px
+	.links_social__fb
+		margin-left: 15px
+	.tab_content .tab_item 
+		padding: 34px 22px 20px 22px
+	.download_section 
+		margin-top: 44px
+	.sidebar_section
+		display: none
+	.products_similar_section h2
+		font-size: 26px
+@media only screen and (max-width : 749px)
+	.tab
+		width: 160px
+
+	.download_section__item
+		width: 270px
+		margin: 0 auto 20px
+		
+	.item_download__icon
+		margin-left: 0
+
+	
+
+@media only screen and (max-width : 720px)
+	.sliders
+		margin: 27px auto
+		float: none
+	.slider_left
+		float: none
+		display: block
+		margin: 27px auto 0
+	.slider_rignt_wrap
+		display: block
+		width: 560px
+		margin-left: 0
+		margin: 2px auto 0
+		float: none
+		overflow: hidden
+		.slider_right
+			width: 80%
+			height: 65px
+			margin: 27px auto 0 
+			.sl__slide
+				margin: 0px 4px
+
+		.fa-angle-right,
+		.fa-angle-left
+			position: absolute
+			color: #a0a1a2
+			font-size: 24px
+			cursor: pointer
+			&:hover
+				color: #1486cc
+
+		.fa-angle-left
+			top: 4px
+			left: -30px
+		.fa-angle-right
+			right: -30px
+			top: 4px
+
+	.links_description
+		overflow: hidden
+	.links_description
+		.links_description_left,
+		.links_description_right
+			float: none
+			display: block
+			width: 330px
+			margin: 0 auto 6px
+			overflow: hidden
+	.links_description__video
+		border-right: 1px solid #000
+		border-radius: 0 10px 10px 0px
+	.links_description__overview
+		border-left: 1px solid #000
+		border-radius: 10px 0 0 10px
+
+	.tab
+		width: 110px
+
+	.products_similar__slider 
+		span.ti-angle-right
+			top: 649px
+	.products_similar__slider
+		span.ti-angle-left
+			top: 649px
+	.product_name h1 
+		text-align: center
+		font-size: 20px
+		margin: 38px 13px 18px 13px
+		line-height: 24px
+	.product_name p
+		text-align: center
+	.price_current
+		float: none
+		text-align: center
+		margin: 0 auto
+		width: 180px
+		font-size: 35px
+	.price
+		float: none
+	.price_old
+		float: none
+		margin: 21px auto
+		width: 102px
+	.buttons
+		float: none
+		margin: 0 auto
+		width: 290px
+	.button_order 
+		width: 147px
+	.button_buy .botton__text
+		width: 92px
+	.links_social
+		float: none
+		width: 168px
+		margin: 19px auto 0
+	.links_social__fb
+		margin-left: 0
+@media only screen and (max-width : 600px)
+	.logo_hidden
+		display: block
+		float: left
+		margin: 9px 0 8px 32px
+		
+	.toggle_mnu
+		left: 83px
+
+	.hidden-mnu
+		left: 0px
+	
+	.users_section__login 
+		margin: 0 30px 0 25px
+
+	.users_section 
+		margin-right: 30px
+
+	.search_hidden
+		border-top: 20px solid transparent
+	.users_section__searh:hover
+		.search_hidden
+			opacity: 1
+			left: -40px
+			top: 22px
+		
+	.slider_left
+		max-width: 500px
+		.sl2__slide
+			max-width: 500px
+	.slider_rignt_wrap
+		width: 500px
+		.slider_right
+			margin-top: 15px
+		.fa-angle-left
+			top: 4px
+			left: -15px
+		.fa-angle-right
+			right: -15px
+			top: 4px
+
+	.products_similar__slider 
+		span.ti-angle-right
+			top: 581px
+	.products_similar__slider
+		span.ti-angle-left
+			top: 581px
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px)
+	.logo_section
+		display: none
+
+	.slider_left
+		max-width: 290px
+	.sl2__slide
+		max-width: 290px
+	.slider_rignt_wrap
+		width: 290px
+		.slider_right
+			margin-top: 27px
+		.fa-angle-left
+			top: 4px
+			left: -15px
+		.fa-angle-right
+			right: -15px
+			top: 4px
+	.links_description
+		.links_description_left,
+		.links_description_right
+			float: none
+			display: block
+			width: 289px
+	.link_descr
+		width: 144px
+	
+	.tab
+		display: none
+	.tab_hidden
+		display: inline-block
+		width: 159px
+	.tab_ico
+		width: 40px
+		margin-bottom: -18px
+	.tab_hiden__icon
+		overflow: hidden
+		background-image: url("../img/tabs-icons.png")
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	.tab_hidden 
+		.icon_waranty
+			background-position: 0px 0px
+			width: 22px
+			height: 23px
+		.icon_designer
+			background-position: -30px 0px
+			width: 24px
+			height: 21px
+		.icon_brand
+			background-position: -59px 0px
+			width: 23px
+			height: 23px
+	
+
+
+	.item_download__icon
+		margin-left: 0
+
+	.slider_section
+		padding-top: 55px
+	.tabs_hidden
+		width: 292px
+		margin: 0 auto
+	.products_similar_section h2
+		font-size: 25px
+		text-align: center
+		padding: 0 40px
+	.products_similar__descr .descr__text p
+		text-align: center
+	.products_similar__descr .product_code
+		text-align: center
+	.products_similar__descr .descr__price .descr__price_current
+		width: 134px
+		margin: 0 auto
+	.products_similar__slider
+		width: 290px
+		margin: 0 auto
+	.products_similar__descr .descr__price .descr__price_old
+		margin: 0 auto
+		width: 99px
+	.product_name h1
+		margin: 15px 13px 22px 13px
+	.price_block 
+		margin-top: 23px
+	.price_old
+		float: none
+		margin: 10px auto 20px
+	.sliders
+		margin: 0px auto 17px
+	.slider_left
+		margin: 22px auto 0
+	.slider_rignt_wrap .slider_right
+		margin-top: 12px
+		height: 47px
+	.links_social
+		margin: 13px auto 0
+	.download_section
+		margin-top: 21px
+	.products_similar_section h2
+		margin: 0px 0 54px 0px
+
+	.products_similar__slider 
+		span.ti-angle-right
+			top: 556px
+			background-color: #eff3f7
+			padding: 18px 57px
+	.products_similar__slider
+		span.ti-angle-left
+			top: 556px
+			right: 146px
+			background-color: #eff3f7
+			padding: 18px 57px
+			border-right: none
+			z-index: 50
+
+		
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

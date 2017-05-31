@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Regular/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans-Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold/OpenSans-Semibold.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */
